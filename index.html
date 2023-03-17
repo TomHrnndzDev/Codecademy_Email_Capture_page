@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Codecademy Email Capture</title>
     <style>
@@ -16,29 +17,59 @@
 </head>
 
 <body>
-    <section class="hero">
-
-    </section>
-    <header class="contianer">
-        <div class="logo">logo</div>
-        <nav class="nav">
-            <ul>
-                <!-- ----add arrow icon---- -->
-                <li>Catalog <i></i></li>
-                <li>Resources </li>
-                <li>Commmunity</li>
-                <li>Pricing</li>
-                <li>Business Solutions</li>
-            </ul>
+    <section class="wrap hero">
+        <nav class="container  nav">
+            <img class="logo" src="/img/code_logo.png" alt="logo">
+            <div class="menu">
+                <ul>
+                    <!-- ----add arrow icon---- -->
+                    <li>Catalog <img src="/img/arrow.svg" class="arrow" alt="arrow"></li>
+                    <li>Resources <img src="/img/arrow.svg" class="arrow" alt="arrow"> </li>
+                    <li>Commmunity <img src="/img/arrow.svg" class="arrow" alt="arrow"> </li>
+                    <li>Pricing <img src="/img/arrow.svg" class="arrow" alt="arrow"> </li>
+                    <li>Business Solutions </li>
+                </ul>
+            </div>
+            <div class="right-menu">
+                <ul>
+                    <li><img class="search" src="/img/search_icon.svg" alt=""></li>
+                    <li> <strong>Log in</strong> </li>
+                </ul>
+            </div>
         </nav>
+        <div class="container jumbo">
+            <div class="hero_img">
+                <img class="h_img" src="/img/hero_img.webp" alt="">
+                <img class="pattern" src="/img/patterns.jpg" alt="">
+            </div>
+            <div class="hero_text">
+                <h1>
+                    Join the millions learning to code <br> with Codecademy for free
+                </h1>
+                <label for="email">Email</label>
+                <input type="email" name="" id="email">
+                <label for="password">Password</label>
+                <input type="password" id="password">
 
-        <div class="right-menu">
-            <ul>
-                <li>search icon</li>
-                <li>log in</li>
-            </ul>
+                <div class="hero-btn">
+                    <a href="#" class="btn">
+                        Sign up
+                    </a>
+                </div>
+                <p>By signing up for Codecademy, you agree to Codecademy's <br> <a href="">Terms of Service</a>& <a
+                        href="">Privacy Policy.</a> </p>
+                <h4>Or sign up using:</h4>
+
+                <div class="icons">
+                    <div><img class="link" src="/img/linkedin.svg" alt=""> </div>
+                    <div><img src="/img/google.svg" alt=""></div>
+                    <div><img src="/img/facebook.svg" alt=""> </div>
+                    <div><img src="/img/github.svg" alt=""></div>
+                </div>
+            </div>
+
         </div>
-    </header>
+    </section>
 
 
 
