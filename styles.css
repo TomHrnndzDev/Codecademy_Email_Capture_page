@@ -23,12 +23,10 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding-block: 15px;
-  border: 2px solid green;
 }
 
 .logo {
   width: 150px;
-  border: 2px solid red;
 }
 
 ul {
@@ -69,6 +67,9 @@ p {
 h4 {
   font-size: 16px;
 }
+a {
+  color: #3a10e5;
+}
 
 /* -----jumbo section ----- */
 
@@ -90,7 +91,6 @@ h4 {
 
 .hero_img,
 .hero_text {
-  border: 1px solid orange;
 }
 
 .hero_img,
@@ -134,12 +134,27 @@ h4 {
 
 .icons {
   display: flex;
-  gap: 2rem;
+  gap: 10px;
 }
 
 .icons div > * {
-  width: 45px;
-  padding: 10px;
+  width: 65px;
+  height: 54px;
+  padding: 16px;
   background-color: #ffffff;
   border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.labels {
+  margin-bottom: -10px;
+}
+
+.info {
+  width: 20px;
+}
+
+.pass_info {
+  display: flex;
+  justify-content: space-between;
 }
