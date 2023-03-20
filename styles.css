@@ -80,44 +80,9 @@ a {
   color: #3a10e5;
 }
 
-/* -----jumbo section ----- */
-
-/* margin-top: 70px; */
-/* margin-left: 40px; */
-/* position: relative; */
-/* z-index: 1; */
-
-/* --------need to figure out postion reletive repsonive---------- */
-
-/* .pattern {
-  width: 100%;
-  max-width: 540px;
-  height: 451px;
-  position: relative;
-  z-index: -1;
-  transform: translate3d(-20px, -440px, 0px);
-} */
-
-.jumbo {
-  border: 2px solid red;
-}
 .hero_text,
 .hero_img {
-  border: 2px solid green;
   flex-basis: 50%;
-}
-.hero_img {
-  padding-top: 80px;
-  padding-left: 50px;
-}
-
-.h_img {
-  width: 100%;
-  max-width: 540px;
-  height: auto;
-  border: 1px solid black;
-
-  /* position: relative; */
 }
 .hero_text {
   display: flex;
@@ -125,10 +90,32 @@ a {
   gap: 1rem;
   width: 100%;
   max-width: 400px;
-  border: 1px solid blue;
   margin: 0 auto;
-  padding-top: 40px;
-  /* padding: 30px; */
+  padding: 40px 5px 0px 5px;
+}
+.hero_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -----figure out way this works 
+why does it need an additional div to connect----- */
+
+.center-box {
+  position: relative;
+}
+.lady_img,
+.p_img {
+  border-radius: 2px;
+  max-width: 500px;
+}
+
+.p_img {
+  top: 10px;
+  left: -10px;
+  position: absolute;
+  z-index: -1;
 }
 .email,
 .password {
@@ -188,16 +175,17 @@ a {
   .search {
     display: none;
   }
-  .hero_img {
-    flex-basis: 100%;
-    display: flex;
-    padding: 20px 0px 0px 0px;
-  }
-  .h_img {
-    max-width: 300px;
-    margin: 0 auto;
-  }
+
   .hamburger {
     display: block;
+  }
+  .hero_img {
+    flex: 1;
+    padding-top: 30px;
+  }
+
+  .lady_img,
+  .p_img {
+    max-width: 350px;
   }
 }
